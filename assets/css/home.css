@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap");
+/* main styling */
+html,
+body {
+  font-family: "Oswald", Helvetica, sans-serif;
+  background-color: #f5f3f3;
+}
+/* Home container */
+.home-container {
+  position: relative;
+  height: 100%;
+}
+/* Sidebare */
+.sidebar {
+  width: 22%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  padding-top: 20px;
+}
+.sidebar img {
+  width: 80px;
+  border-radius: 100%;
+  border: 2px solid #e5e5e5;
+}
+.sidebar h2 {
+  padding-top: 20px;
+}
+.sidebar .sidebar-role {
+  color: #999b9d;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+#nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}
+#nav li {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid rgb(237, 236, 236);
+  border-top: 1px solid rgb(237, 236, 236);
+  margin-top: -1px;
+}
+#nav li.active {
+  background-color: #f5f3f3;
+}
+
+li.active a:after {
+  background-color: #f4c052;
+  display: block;
+  position: absolute;
+  content: " ";
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+}
+#nav a {
+  color: black;
+  text-decoration: none;
+}
+/* sidebare brands */
+.home-container .sidebar .brands {
+  float: left;
+  width: 10%;
+  margin-top: 10%;
+}
+.home-container .sidebar #twitter {
+  margin-left: 35%;
+}
+.home-container .sidebar i {
+  background-color: #f5f3f3;
+}
+/* Container */
+.container {
+  background-image: url("../images/home_page_bg_2.jpeg");
+  height: 100vh;
+  margin-left: 23%;
+  position: relative;
+}
+.container-text {
+  width: 100%;
+  position: absolute;
+  color: #fff;
+}
+.container-mask {
+  height: 100vh;
+  background-color: rgba(66, 66, 66, 0.685);
+}
+.container .user-name {
+  font-size: 80px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.container .user-role {
+  color: #f5f3f3;
+  opacity: 0.3;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.container .container-text p {
+  font-size: 20px;
+  margin-left: 37%;
+  margin-bottom: 10px;
+}
+.container .container-text p b {
+  margin-right: 20px;
+  border-bottom: 2px solid #fccd39;
+}

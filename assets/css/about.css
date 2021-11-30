@@ -1,0 +1,260 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap");
+/* main styling */
+html,
+body {
+  font-family: "Oswald", Helvetica, sans-serif;
+  background-color: #f5f3f3;
+}
+/* Home container */
+.home-container {
+  position: relative;
+  height: 100%;
+}
+/* Sidebare */
+.sidebar {
+  width: 22%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  padding-top: 20px;
+}
+.sidebar img {
+  width: 80px;
+  border-radius: 100%;
+  border: 2px solid #e5e5e5;
+}
+.sidebar h2 {
+  padding-top: 20px;
+}
+.sidebar .sidebar-role {
+  color: #999b9d;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+#nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}
+#nav li {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid rgb(237, 236, 236);
+  border-top: 1px solid rgb(237, 236, 236);
+  margin-top: -1px;
+}
+#nav li.active {
+  background-color: #f5f3f3;
+}
+
+li.active a:after {
+  background-color: #f4c052;
+  display: block;
+  position: absolute;
+  content: " ";
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+}
+#nav a {
+  color: black;
+  text-decoration: none;
+}
+/* sidebare brands */
+.about-container .sidebar .brands {
+  float: left;
+  width: 10%;
+  margin-top: 10%;
+}
+.about-container .sidebar #twitter {
+  margin-left: 35%;
+}
+.about-container .sidebar i {
+  background-color: #f5f3f3;
+}
+
+/* Container about */
+.container {
+  background-color: #fff;
+  height: 180vh;
+  margin-left: 23%;
+  position: relative;
+}
+.container .user-about {
+  color: #fff;
+  background-color: #fccd39;
+  float: left;
+  width: 130px;
+  margin-top: 30px;
+  padding-left: 70px;
+  padding-bottom: 5px;
+}
+.container .role {
+  float: left;
+  width: 200px;
+  color: #999b9d;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+/* Description */
+.container .container-text {
+  margin-left: 70px;
+  padding-top: 130px;
+}
+.container .container-text .description {
+  float: left;
+  width: 45%;
+  padding-bottom: 50px;
+}
+.container .container-text .description h3 {
+  padding-bottom: 10px;
+}
+.container .container-text .description p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7f8285;
+}
+.container .container-text .testimonials {
+  float: right;
+  margin-bottom: 91px;
+  width: 50%;
+}
+/* Testimonials */
+.container .container-text .testimonials .testimonials-header {
+  border-bottom: 2px solid #fccd39;
+}
+.container .container-text .testimonials p {
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7f8285;
+  background-color: #fcfcfc;
+  float: right;
+  width: 200px;
+  margin-top: 20px;
+  margin-right: 39%;
+  padding: 35px 25px;
+  border-radius: 10px;
+  border: 2px solid #999b9d;
+}
+.container .container-text .testimonials .testimonials-img {
+  float: right;
+  margin-top: 26%;
+  margin-right: 10%;
+}
+.container .container-text .testimonials .testimonials-img img {
+  border: 2px solid #999b9d;
+  border-radius: 100%;
+  position: absolute;
+  left: 53%;
+}
+.container .container-text .testimonials .testimonials-bio {
+  margin-top: 190px;
+  margin-left: 20%;
+}
+.container .container-text .testimonials .testimonials-bio .testimonials-role {
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  color: #7f8285;
+}
+.container .container-text .testimonials #left-arrow {
+  margin-left: 23%;
+  margin-top: 200px;
+  padding-left: 5px;
+  color: #7f8285;
+  width: 20px;
+  height: 25px;
+  background-color: #e5e5e5;
+  position: absolute;
+}
+.container .container-text .testimonials #right-arrow {
+  margin-left: 25.5%;
+  margin-top: 200px;
+  padding-left: 5px;
+  color: #7f8285;
+  width: 20px;
+  height: 25px;
+  background-color: #e5e5e5;
+  position: absolute;
+}
+.container .container-text .services .services-header {
+  margin-bottom: 50px;
+  border-bottom: 2px solid #fccd39;
+}
+.box {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.container .container-text .services h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.container .container-text .services p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #7f8285;
+}
+.container .container-text .services .servises-box {
+  margin-top: 30px;
+}
+.container .container-text .services .servises-box .box h4 {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.container .container-text .services .servises-box #web-design,
+#copywriter,
+#e-commerce,
+#management {
+  width: 180px;
+  margin: 0px 20px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+}
+/* Clients */
+.container .container-text .clients {
+  margin-top: 330px;
+}
+.container .container-text .clients .clients-header {
+  border-bottom: 2px solid #fccd39;
+}
+.box-img {
+  float: left;
+  width: 16%;
+  margin-top: 30px;
+}
+/* Fun Facts */
+.container .container-text .fun-facts {
+  margin-top: 140px;
+}
+.container .container-text .fun-facts .funfacts-header {
+  border-bottom: 2px solid #fccd39;
+}
+.box-icon {
+  float: left;
+  width: 15%;
+  height: 200px;
+  text-align: center;
+  border: 2px solid #f5f3f3;
+  border-radius: 5px;
+  box-decoration-break: clone;
+  margin: 30px 20px;
+}
+.container .container-text .fun-facts #happy-clients,
+#awards-won {
+  background-color: #fcfcfc;
+}
+.container .container-text .fun-facts h4 {
+  padding-bottom: 5px;
+}
+.container .container-text .fun-facts p {
+  font-size: 25px;
+  color: #fccd39;
+}
+.container .container-text .fun-facts i {
+  padding: 25px 0px;
+}

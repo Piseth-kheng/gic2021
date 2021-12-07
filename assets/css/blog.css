@@ -1,0 +1,194 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed&display=swap");
+/* main styling */
+html,
+body {
+  font-family: "Oswald", Helvetica, sans-serif;
+  background-color: #f5f3f3;
+}
+/* blog container */
+.blog-container {
+  position: relative;
+  height: 100%;
+}
+/* Sidebare */
+.sidebar {
+  width: 22%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  padding-top: 20px;
+}
+.sidebar img {
+  width: 80px;
+  border-radius: 100%;
+  border: 2px solid #e5e5e5;
+}
+.sidebar h2 {
+  padding-top: 20px;
+}
+.sidebar .sidebar-role {
+  color: #999b9d;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+#nav {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}
+#nav li {
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid rgb(237, 236, 236);
+  border-top: 1px solid rgb(237, 236, 236);
+  margin-top: -1px;
+}
+#nav li.active {
+  background-color: #f5f3f3;
+}
+
+li.active a:after {
+  background-color: #f4c052;
+  display: block;
+  position: absolute;
+  content: " ";
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+}
+#nav a {
+  color: black;
+  text-decoration: none;
+}
+/* sidebare brands */
+.blog-container .sidebar .box-brands {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+.blog-container .sidebar .box-brands #twitter,
+#facebook,
+#google {
+  margin: 0% 1.2%;
+}
+.blog-container .sidebar .box-brands i {
+  background-color: #f5f3f3;
+  color: #999b9d;
+}
+/* Container blog */
+.container {
+  background-color: #fff;
+  height: 100%;
+  margin-left: 23%;
+  position: relative;
+}
+.container .container1 {
+  display: flex;
+  align-items: baseline;
+}
+.container .container1 .header-box {
+  color: #fff;
+  background-color: #fccd39;
+  margin-top: 30px;
+  width: 70px;
+  padding-left: 70px;
+  padding-bottom: 5px;
+}
+.container .container1 .header-bio {
+  width: 200px;
+  color: #999b9d;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+.container .container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  padding: 10px;
+  margin-top: 40px;
+}
+.container .container2 .card {
+  display: grid;
+  font-size: 80%;
+  grid-template-columns: 100%;
+  grid-template-rows: 20vh 10vh;
+  grid-template-areas: "image" "text";
+  text-align: center;
+  grid-template-areas: "image" "text";
+  box-shadow: 1px 1px 5px #e5e5e5;
+  width: 40%;
+  margin: 2%;
+}
+
+.card-img {
+  grid-area: image;
+  background-position: center;
+  background-size: cover;
+}
+.card-img p {
+  margin-top: 16vh;
+  margin-left: 80%;
+  margin-right: 10%;
+  padding: 1% 3%;
+  color: #fff;
+  background-color: #fccd39;
+}
+.container .container2 #card1 .card-img {
+  background-image: url("../images/blog_post_1.jpg");
+}
+.container .container2 #card2 .card-img {
+  background-image: url("../images/blog_post_2.jpg");
+}
+.container .container2 #card3 .card-img {
+  background-image: url("../images/blog_post_3.jpg");
+}
+.container .container2 #card4 .card-img {
+  background-image: url("../images/blog_post_4.jpg");
+}
+.container .container2 #card5 .card-img {
+  background-image: url("../images/blog_post_5.jpg");
+}
+.container .container2 #card6 .card-img {
+  background-image: url("../images/blog_post_6.jpg");
+}
+.container .container2 #card7 .card-img {
+  background-image: url("../images/blog_post_7.jpg");
+}
+.container .container2 #card8 .card-img {
+  background-image: url("../images/blog_post_8.jpg");
+}
+
+.card-text {
+  grid-area: text;
+  width: 100%;
+}
+.card-text p {
+  color: #999b9d;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+@media (max-width: 768px) {
+  .container .container1 .header-box {
+    margin-top: 30px;
+    font-size: 70%;
+    width: 50px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+  }
+  .container .container1 .header-bio {
+    font-size: 70%;
+    margin-top: 45px;
+    margin-left: 15px;
+  }
+  .container .container2 .card {
+    width: 50%;
+    font-size: 50%;
+  }
+}

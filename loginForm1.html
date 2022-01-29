@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="loginform.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Login Form</title>
+</head>
+<body>
+  <div id="login-wrapper">
+    <p>Given a log in info:</p>
+    <p>Email: gic@gmail.com</p>
+    <p>Pwd: Gic123</p>
+
+    <h2>Login Form</h2>
+    <div class="imgcontainer">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar" style="width:200px;height:200px;" class="avatar">
+    </div>
+    
+    <form autocomplete="off" onsubmit="login()">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control" id="psw" placeholder="Enter password" name="pwd">
+      </div>
+     
+      <button type="submit" id="save_btn" class="button" style="color: white">Submit</button>
+    </form>
+  </div>
+  <div id="home-wrapper">
+    <h2>Welcome to Home Page</h2>
+    <h4>You will be automatically logged out</h4>
+    <h4>Keep refreshing your page</h4>
+    <br>
+    <button onclick="logout()" style="float: left;">Logout</button>
+  </div>
+</body>
+<script>
+  //hide both pages
+  document.getElementById('home-wrapper').style.display = 'none';
+  document.getElementById('login-wrapper').style.display = 'none';
+  logout();
+  //set cookie
+  //document.cookie = "email=gic@gmail.com; expires=Thu, 18 Dec 2030 12:00:00 UTC";
+  function logout(){
+    document.cookie = "email="
+  }
+  //Check condition whether it has cookie
+  const storedCookie = getCookie('email');
+  console.log("storedCookie", storedCookie);
+  if(storedCookie){
+    document.getElementById('home-wrapper').style.display = 'block';
+  }else{
+    document.getElementById('login-wrapper').style.display = 'block';
+  }
+
+  //get cookie
+  function getCookie(cname){
+    let name  = cname + "=";
+    let decodeCookie = decodeURIComponent(document.cookie);
+    let ca = decodeCookie.split(";");
+    for(let i=0; i<ca.length; i++){
+      let c = ca[i];
+      while (c.charAt(0) == ' '){
+        c = c.substring(1);
+      }
+      if (c.indexOf(name)==0){
+        return c.substring(name.length,c.length);
+      }
+    }
+    return "";
+  }
+
+
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./login.css" >
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min"> -->
+    <title>Login Form</title>
+</head>
+<body>
+    <div id="login-wrapper">
+        <form class="form-container" onsubmit="onClickLogin()">
+            <p>Given login info:</p>
+            <p>Email: gic@gmail.com</p>
+            <p>Pwd: Gic123</p>
+            <div class="image">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar" style="width:150px;height:150px;" class="avatar">
+            </div>
+            <div class="form-grp">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Enter email" id="email">
+            </div>
+            <div class="form-grp">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Enter password" id="pwd">
+            </div>
+            <div class="form-grp">
+                <input type="submit" name="login-btn" value="Login">
+            </div>
+        </form>
+    </div>
+    <div id="home-wrapper">
+        <h2>Welcome to Home Page</h2>
+        <h4>You will be automatically logged out</h4>
+        <h4>Keep refreshing your page</h4>
+        <br>
+        <button type="submit" onclick="logout()" style="float: center;">Logout</button>
+      </div>
+</body>
+<script src="./loginForm.js"></script>
+</html>

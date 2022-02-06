@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+#home-wrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  width: fit-content;
+  height: 450px;
+  background-color: aliceblue;
+}
+
+#home-wrapper h1 {
+  font-weight: bold;
+  padding: 10px;
+  color: #241e4a;
+}
+#home-wrapper #counter {
+  font-size: 80px;
+  color: green;
+}
+.btn {
+  margin: 10px;
+}
